@@ -1,0 +1,107 @@
+/* styles/recipe.css */
+
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    animation: fadeIn 0.5s ease; /* Fade-in animation */
+}
+
+/* Glass effect for review sections */
+.review {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent background for reviews */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    opacity: 0; /* Initial state for fade-in animation */
+    transform: translateY(20px); /* Initial position for slide effect */
+    animation: slideIn 0.5s ease forwards; /* Slide-in animation */
+}
+
+/* Image styling */
+.recipe-image {
+    max-width: 100%; /* Responsive image */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for the form */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    margin-top: 20px;
+    opacity: 0; /* Initial state for fade-in animation */
+    transform: translateY(20px); /* Initial position for slide effect */
+    animation: slideIn 0.5s ease forwards; /* Slide-in animation */
+    animation-delay: 0.2s; /* Delay for form to appear after reviews */
+}
+
+/* Label and input styling */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+textarea {
+    width: 100%; /* Full width input */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Transition for border color on focus */
+}
+
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+}
+
+/* Button styling */
+button {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Transition effect */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
