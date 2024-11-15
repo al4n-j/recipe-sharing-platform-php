@@ -22,7 +22,7 @@ A dynamic web-based platform for sharing and exploring delicious recipes. This p
 
 ---
 
-## Demo GIF
+## Demo MP4
 
 ![Recipe Sharing Platform Demo](demo.mp4)
 
