@@ -22,6 +22,11 @@ A dynamic web-based platform for sharing and exploring delicious recipes. This p
 
 ---
 
+## Demo GIF
+
+![Recipe Sharing Platform Demo](demo.mp4)
+
+
 ## Pages
 
 - **Login Page (`login.php`)**  
